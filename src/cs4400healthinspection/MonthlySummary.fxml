@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.MonthlySummaryController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="73.0" stroke="BLACK" strokeType="INSIDE" width="834.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="61.0" layoutX="6.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="822.0" />
+        <Label layoutX="214.0" layoutY="14.0" text="Georgia Restaurant Health Inspections">
+           <font>
+              <Font size="24.0" />
+           </font>
+        </Label>
+        <Accordion layoutX="146.0" layoutY="372.0" />
+        <Label layoutX="375.0" layoutY="41.0" text="Monthly Report" />
+        <Label layoutX="32.0" layoutY="121.0" text="Enter Month">
+           <font>
+              <Font name="System Bold" size="18.0" />
+           </font>
+        </Label>
+        <Label layoutX="316.0" layoutY="121.0" text="Enter Year">
+           <font>
+              <Font name="System Bold" size="18.0" />
+           </font>
+        </Label>
+        <TextField fx:id="monthTextfield" layoutX="154.0" layoutY="121.0" prefHeight="27.0" prefWidth="147.0" />
+        <TextField fx:id="yearTextfield" layoutX="417.0" layoutY="121.0" prefHeight="27.0" prefWidth="147.0" />
+        <Button layoutX="749.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" text="Submit" />
+        <Button layoutX="681.0" layoutY="484.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" prefHeight="25.0" prefWidth="153.0" text="Return to Previous Screen">
+           <opaqueInsets>
+              <Insets />
+           </opaqueInsets></Button>
+      <TableView fx:id="bigTable" layoutX="47.0" layoutY="190.0" prefHeight="287.0" prefWidth="679.0">
+        <columns>
+          <TableColumn fx:id="countyCol" prefWidth="247.0" text="County" />
+          <TableColumn fx:id="cuisineCol" prefWidth="166.0" text="Cuisine" />
+            <TableColumn fx:id="inspCountCol" prefWidth="150.0" text="# of times Inspected" />
+            <TableColumn fx:id="failCountCol" minWidth="0.0" prefWidth="115.0" text="# of times Failed" />
+        </columns>
+      </TableView>
+      <Label fx:id="textLabel" layoutX="414.0" layoutY="162.0" prefHeight="17.0" prefWidth="389.0" />
+   </children>
+</AnchorPane>

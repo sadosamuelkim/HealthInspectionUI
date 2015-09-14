@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.YearlyCountySummaryController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="72.0" stroke="BLACK" strokeType="INSIDE" width="882.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="60.0" layoutX="5.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="871.0" />
+      <Accordion layoutX="146.0" layoutY="372.0" />
+      <Label layoutX="319.0" layoutY="41.0" text="Top Health Inspection Ranked Restaurants" />
+      <Label layoutX="23.0" layoutY="118.0" text="Enter Year">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="118.0" text="Enter County">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textLabel" layoutX="564.0" layoutY="123.0" prefHeight="17.0" prefWidth="213.0" />
+      <TextField fx:id="year" layoutX="118.0" layoutY="118.0" prefHeight="27.0" prefWidth="147.0" />
+      <TextField fx:id="county" layoutX="397.0" layoutY="118.0" prefHeight="27.0" prefWidth="147.0" />
+      <Label layoutX="228.0" layoutY="14.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="783.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" text="Submit" />
+      <Button layoutX="630.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return to Previous Screen" />
+      <TableView fx:id="bigTable" layoutX="252.0" layoutY="176.0" prefHeight="343.0" prefWidth="357.0">
+         <columns>
+            <TableColumn fx:id="monthCol" prefWidth="112.0" text="Month" />
+            <TableColumn fx:id="inspCountCol" prefWidth="243.0" text="Restaurant" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.InspInsertInspectionController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="51.0" stroke="BLACK" strokeType="INSIDE" width="1028.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="41.0" layoutX="7.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="1015.0" />
+        <Label layoutX="345.0" layoutY="6.0" text="Georgia Restaurant Health Inspections">
+           <font>
+              <Font name="System Bold" size="24.0" />
+           </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="68.0" text="Inspector ID" />
+        <Label layoutX="266.0" layoutY="68.0" text="Restaurant ID" />
+        <Label layoutX="514.0" layoutY="68.0" text="Date" />
+        <TextField fx:id="inspIDTextfield" layoutX="118.0" layoutY="64.0" prefHeight="25.0" prefWidth="125.0" />
+        <TextField fx:id="restIDTextfield" layoutX="369.0" layoutY="64.0" prefHeight="25.0" prefWidth="125.0" />
+        <TableView fx:id="bigTable" layoutY="114.0" prefHeight="405.0" prefWidth="1006.0">
+          <columns>
+            <TableColumn fx:id="itemNumberCol" editable="false" prefWidth="63.0" resizable="false" text="Item" />
+            <TableColumn fx:id="itemDescrCol" editable="false" minWidth="0.0" prefWidth="774.0" resizable="false" text="Item Description" />
+              <TableColumn fx:id="CriticalCol" editable="false" prefWidth="78.0" resizable="false" text="Critical" />
+          </columns>
+        </TableView>
+        <TextField fx:id="dateTextfield" layoutX="562.0" layoutY="63.0" prefHeight="27.0" prefWidth="151.0" promptText="yyyymmdd" />
+        <Button layoutX="779.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return to Previous Screen" />
+        <Button layoutX="14.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" text="Submit" />
+        <TextField fx:id="t1Col" alignment="CENTER" layoutX="927.0" layoutY="140.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t2Col" alignment="CENTER" layoutX="927.0" layoutY="165.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t3Col" alignment="CENTER" layoutX="927.0" layoutY="190.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t4Col" alignment="CENTER" layoutX="927.0" layoutY="215.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t5Col" alignment="CENTER" layoutX="927.0" layoutY="240.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t6Col" alignment="CENTER" layoutX="927.0" layoutY="265.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t7Col" alignment="CENTER" layoutX="927.0" layoutY="290.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t8Col" alignment="CENTER" layoutX="927.0" layoutY="315.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t9Col" alignment="CENTER" layoutX="927.0" layoutY="338.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t10Col" alignment="CENTER" layoutX="927.0" layoutY="363.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t11Col" alignment="CENTER" layoutX="927.0" layoutY="391.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t12Col" alignment="CENTER" layoutX="927.0" layoutY="416.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t13Col" alignment="CENTER" layoutX="927.0" layoutY="441.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t14Col" alignment="CENTER" layoutX="927.0" layoutY="466.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <TextField fx:id="t15Col" alignment="CENTER" layoutX="927.0" layoutY="491.0" minHeight="15.0" prefHeight="25.0" prefWidth="88.0" />
+        <Label layoutX="940.0" layoutY="101.0" text="Score">
+           <font>
+              <Font name="System Bold" size="18.0" />
+           </font>
+        </Label>
+      <Label fx:id="textLabel" layoutX="94.0" layoutY="554.0" prefHeight="17.0" prefWidth="344.0" />
+    </children>
+</AnchorPane>

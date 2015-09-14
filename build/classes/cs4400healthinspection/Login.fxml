@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="210.0" layoutX="-1.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="199.0" layoutX="5.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="591.0" />
+      <ImageView fitHeight="160.0" fitWidth="170.0" layoutX="235.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@georgia.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="83.0" layoutY="5.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="289.0" layoutY="285.0" prefHeight="35.0" prefWidth="27.0" text="OR" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="329.0" prefHeight="35.0" prefWidth="107.0" text="Username:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="365.0" prefHeight="35.0" prefWidth="107.0" text="Password:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textLabel" layoutX="95.0" layoutY="405.0" prefHeight="25.0" prefWidth="285.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="240.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#onGuestEvent" prefHeight="39.0" prefWidth="126.0" text="Guest Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="usernameInput" layoutX="228.0" layoutY="334.0" />
+      <PasswordField fx:id="passwordInput" layoutX="229.0" layoutY="370.0" />
+      <Button layoutX="264.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#onUserEvent" prefHeight="39.0" prefWidth="72.0" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

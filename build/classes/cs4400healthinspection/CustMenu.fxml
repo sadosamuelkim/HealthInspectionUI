@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.CustMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="108.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="95.0" layoutX="8.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="585.0" />
+      <Label layoutX="83.0" layoutY="24.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="94.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#onSearchEvent" prefHeight="108.0" prefWidth="173.0" text="Searching for&#10; Restaurants" />
+      <Button layoutX="336.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#onComplainEvent" prefHeight="108.0" prefWidth="173.0" text="  Filing a&#10;Complaint" />
+      <Button layoutX="236.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return to Login Page" />
+      <Label layoutX="252.0" layoutY="59.0" text="Guest Menu">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

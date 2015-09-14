@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.ComplaintSummaryController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="87.0" stroke="BLACK" strokeType="INSIDE" width="1201.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="75.0" layoutX="8.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="1185.0" />
+      <Label layoutX="470.0" layoutY="14.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="49.0" text="Restaurants with Complaints (At least 1 non perfect Citical Item Score on Inspection)">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="108.0" text="Enter Year" />
+      <Label layoutX="224.0" layoutY="108.0" text="Enter Minimum Complaints " />
+      <Label layoutX="470.0" layoutY="108.0" text="Enter Maximum Score" />
+      <TextField fx:id="yearTextfield" alignment="CENTER" layoutX="78.0" layoutY="103.0" prefHeight="27.0" prefWidth="131.0" />
+      <TextField fx:id="minComplaintTextfield" layoutX="386.0" layoutY="97.0" prefHeight="39.0" prefWidth="61.0" />
+      <TextField fx:id="maxScoreTextfield" layoutX="601.0" layoutY="97.0" prefHeight="39.0" prefWidth="61.0" />
+      <Button layoutX="1051.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" prefHeight="39.0" prefWidth="124.0" text="Submit" />
+      <TableView fx:id="bigTable" layoutX="14.0" layoutY="153.0" prefHeight="460.0" prefWidth="1167.0">
+        <columns>
+          <TableColumn fx:id="restaurantCol" prefWidth="125.0" text="Restaurant" />
+          <TableColumn fx:id="addressCol" prefWidth="289.0" text="Address" />
+            <TableColumn fx:id="restopNameCol" prefWidth="153.0" text="Operator Name" />
+            <TableColumn fx:id="restopEmailCol" prefWidth="176.0" text="Operator Email" />
+            <TableColumn fx:id="scoreCol" prefWidth="54.0" text="Score" />
+            <TableColumn fx:id="numComCol" prefWidth="88.0" text="# Complaints" />
+            <TableColumn fx:id="complaintCol" prefWidth="284.0" text="Customer Complaint" />
+        </columns>
+      </TableView>
+      <Button layoutX="1009.0" layoutY="622.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return To Previous Screen" />
+      <Label fx:id="textLabel" layoutX="680.0" layoutY="113.0" prefHeight="17.0" prefWidth="362.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

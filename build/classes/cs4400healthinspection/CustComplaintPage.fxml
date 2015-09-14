@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.CustComplaintPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="83.0" stroke="BLACK" strokeType="INSIDE" width="961.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="67.0" layoutX="9.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="943.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="83.0" layoutX="14.0" layoutY="109.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="83.0" layoutX="167.0" layoutY="109.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="173.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="83.0" layoutX="347.0" layoutY="109.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="83.0" layoutX="507.0" layoutY="110.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="83.0" layoutX="670.0" layoutY="109.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="126.0" layoutX="19.0" layoutY="258.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="126.0" layoutX="171.0" layoutY="258.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="126.0" layoutX="320.0" layoutY="258.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="126.0" layoutX="474.0" layoutY="258.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0004ff" height="126.0" layoutX="626.0" layoutY="258.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="314.0" />
+      <Label layoutX="248.0" layoutY="14.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="49.0" text="Food/Safety Complaint">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="116.0" text="Restaurant">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="116.0" text="Street">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="116.0" text="City">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="116.0" text="State">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="116.0" text="Zipcode">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="265.0" text="Date of Meal">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="265.0" text=" Customer&#10;First Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="265.0" text=" Customer&#10;Last Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="265.0" text="Customer&#10;  Phone">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="688.0" layoutY="265.0" text="Complaint Description">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="restaurantNameTextfield" layoutX="19.0" layoutY="151.0" prefHeight="39.0" prefWidth="136.0" />
+      <TextField fx:id="streetNameTextfield" layoutX="171.0" layoutY="151.0" prefHeight="39.0" prefWidth="166.0" />
+      <TextField fx:id="cityTextfield" layoutX="351.0" layoutY="151.0" prefHeight="39.0" prefWidth="145.0" />
+      <TextField fx:id="stateTextfield" layoutX="510.0" layoutY="151.0" prefHeight="39.0" prefWidth="145.0" />
+      <TextField fx:id="zipcodeTextfield" layoutX="675.0" layoutY="151.0" prefHeight="39.0" prefWidth="136.0" />
+      <TextField fx:id="dateTextfield" layoutX="24.0" layoutY="319.0" prefHeight="39.0" prefWidth="136.0" promptText="yyyymmdd" />
+      <TextField fx:id="firstNameTextfield" layoutX="176.0" layoutY="321.0" prefHeight="39.0" prefWidth="136.0" />
+      <TextField fx:id="lastNameTextfield" layoutX="325.0" layoutY="321.0" prefHeight="39.0" prefWidth="136.0" />
+      <TextField fx:id="customerPhoneTextfield" layoutX="479.0" layoutY="321.0" prefHeight="39.0" prefWidth="136.0" promptText="1234567890" />
+      <TextArea fx:id="complaintTextArea" layoutX="639.0" layoutY="293.0" prefHeight="83.0" prefWidth="289.0" />
+      <Button layoutX="24.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" text="Submit" />
+      <Button layoutX="629.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#onCancelEvent" text="Cancel and Return to Previous Page" />
+      <Label fx:id="textLabel" layoutX="87.0" layoutY="424.0" prefHeight="17.0" prefWidth="289.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

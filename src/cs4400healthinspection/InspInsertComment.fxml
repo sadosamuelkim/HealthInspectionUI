@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="774.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.InspInsertCommentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="55.0" stroke="BLACK" strokeType="INSIDE" width="954.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="41.0" layoutX="7.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="941.0" />
+      <Label layoutX="286.0" layoutY="10.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="69.0" text="Inspector ID" />
+      <Label layoutX="289.0" layoutY="67.0" text="Restaurant ID" />
+      <Label layoutX="536.0" layoutY="67.0" text="Date" />
+      <TextField fx:id="inspIDTextfield" layoutX="139.0" layoutY="65.0" prefHeight="25.0" prefWidth="125.0" />
+      <TextField fx:id="restIDTextfield" layoutX="378.0" layoutY="63.0" prefHeight="25.0" prefWidth="125.0" />
+      <TextField fx:id="dateTextfield" layoutX="576.0" layoutY="65.0" prefHeight="25.0" prefWidth="135.0" promptText="yyyy-mm-dd" />
+      <Button layoutX="42.0" layoutY="715.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" text="Submit" />
+      <TableView fx:id="bigTable" layoutX="51.0" layoutY="117.0" prefHeight="561.0" prefWidth="849.0">
+         <columns>
+            <TableColumn prefWidth="87.0" text="Item #" />
+            <TableColumn minWidth="0.0" prefWidth="761.0" text="Comment" />
+         </columns>
+      </TableView>
+      <Button layoutX="711.0" layoutY="715.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return to Homepage" />
+      <TextField fx:id="rowI1" alignment="CENTER" layoutX="51.0" layoutY="152.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI2" alignment="CENTER" layoutX="51.0" layoutY="187.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI3" alignment="CENTER" layoutX="51.0" layoutY="222.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI4" alignment="CENTER" layoutX="51.0" layoutY="257.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI5" alignment="CENTER" layoutX="51.0" layoutY="292.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI6" alignment="CENTER" layoutX="51.0" layoutY="327.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI7" alignment="CENTER" layoutX="51.0" layoutY="362.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI8" alignment="CENTER" layoutX="51.0" layoutY="397.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI9" alignment="CENTER" layoutX="51.0" layoutY="432.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI11" alignment="CENTER" layoutX="51.0" layoutY="502.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowC1" layoutX="137.0" layoutY="152.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC2" layoutX="137.0" layoutY="187.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC3" layoutX="137.0" layoutY="222.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC4" layoutX="137.0" layoutY="257.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC5" layoutX="137.0" layoutY="292.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC6" layoutX="137.0" layoutY="327.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC7" layoutX="137.0" layoutY="362.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC8" layoutX="137.0" layoutY="397.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC9" layoutX="137.0" layoutY="432.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC11" layoutX="137.0" layoutY="502.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC10" layoutX="137.0" layoutY="467.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC12" layoutX="137.0" layoutY="537.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC13" layoutX="137.0" layoutY="572.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC14" layoutX="137.0" layoutY="607.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowC15" layoutX="137.0" layoutY="642.0" minHeight="15.0" prefHeight="35.0" prefWidth="763.0" />
+      <TextField fx:id="rowI12" alignment="CENTER" layoutX="51.0" layoutY="537.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI13" alignment="CENTER" layoutX="51.0" layoutY="572.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI14" alignment="CENTER" layoutX="51.0" layoutY="607.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI15" alignment="CENTER" layoutX="51.0" layoutY="642.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <TextField fx:id="rowI10" alignment="CENTER" layoutX="51.0" layoutY="467.0" minHeight="15.0" prefHeight="35.0" prefWidth="88.0" />
+      <Label fx:id="textLabel" layoutX="110.0" layoutY="719.0" prefHeight="17.0" prefWidth="529.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

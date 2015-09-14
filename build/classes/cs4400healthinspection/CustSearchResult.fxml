@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.CustSearchResultController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="55.0" stroke="BLACK" strokeType="INSIDE" width="890.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="42.0" layoutX="9.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="876.0" />
+      <Label layoutX="242.0" layoutY="14.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bigTable" layoutX="19.0" layoutY="67.0" prefHeight="365.0" prefWidth="853.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="166.0" text="Restaurant" />
+          <TableColumn fx:id="addressCol" prefWidth="219.0" text="Address" />
+            <TableColumn fx:id="cuisineCol" prefWidth="126.0" text="Cuisine" />
+            <TableColumn fx:id="scoreCol" prefWidth="162.0" sortType="DESCENDING" text="Last Inspection &#10;       Score" />
+            <TableColumn fx:id="dateCol" prefWidth="179.0" text="Date of Last&#10; Inspection" />
+        </columns>
+      </TableView>
+      <Button layoutX="706.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return to Previous Screen" />
+   </children>
+</AnchorPane>

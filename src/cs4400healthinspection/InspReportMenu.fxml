@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.InspReportMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="75.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="61.0" layoutX="8.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" width="585.0" />
+      <Label layoutX="83.0" layoutY="19.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#onMonthlyEvent" prefHeight="108.0" prefWidth="173.0" text="Monthly Report" />
+      <Button layoutX="344.0" layoutY="86.0" mnemonicParsing="false" onMouseClicked="#onYearlyEvent" prefHeight="108.0" prefWidth="173.0" text="Yearly County Report" />
+      <Button layoutX="83.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#onTopEvent" prefHeight="108.0" prefWidth="173.0" text="Top Ranked Report" />
+      <Button layoutX="344.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#onComplainEvent" prefHeight="108.0" prefWidth="173.0" text="Complaint Report" />
+      <Button layoutX="228.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Return to Previous Page" />
+   </children>
+</AnchorPane>

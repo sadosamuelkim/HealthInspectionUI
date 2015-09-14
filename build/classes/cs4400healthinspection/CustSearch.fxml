@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs4400healthinspection.CustSearchController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="70.0" layoutX="-3.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="608.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#daf2ff" height="58.0" layoutX="3.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="599.0" />
+      <Label layoutX="97.0" layoutY="15.0" text="Georgia Restaurant Health Inspections">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="42.0" text="Restaurant Search" />
+      <Label layoutX="98.0" layoutY="99.0" text="Name">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="153.0" text="Score*">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="202.0" text="Zipcode*">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="253.0" text="Cuisine">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="restName" layoutX="188.0" layoutY="97.0" prefHeight="35.0" prefWidth="149.0" />
+      <TextField fx:id="restScore" alignment="CENTER" layoutX="188.0" layoutY="151.0" prefHeight="39.0" prefWidth="95.0" />
+      <ComboBox fx:id="ScoreBox" layoutX="296.0" layoutY="151.0" prefHeight="39.0" prefWidth="116.0" />
+      <TextField fx:id="restZip" layoutX="188.0" layoutY="200.0" prefHeight="39.0" prefWidth="95.0" />
+      <ComboBox fx:id="CuisineBox" editable="true" layoutX="188.0" layoutY="251.0" prefHeight="39.0" prefWidth="224.0" promptText="select" visibleRowCount="5" />
+      <Label layoutX="65.0" layoutY="311.0" text="*Required Condition">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#onSubmitEvent" text="Submit" />
+      <Button layoutX="354.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#onReturnEvent" text="Cancel and Return to Previous Screen" />
+      <Label fx:id="textLabel" layoutX="81.0" layoutY="351.0" prefHeight="17.0" prefWidth="253.0" textFill="RED">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
